@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		908882561672E39700EFB0AE /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 908882541672E39700EFB0AE /* MagicalRecord.h */; };
+		908882571672E39700EFB0AE /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 908882551672E39700EFB0AE /* MagicalRecord.m */; };
+		908882581672E39700EFB0AE /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 908882551672E39700EFB0AE /* MagicalRecord.m */; };
+		9088825A1672E3D200EFB0AE /* MagicalRecordSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 908882591672E3D200EFB0AE /* MagicalRecordSpec.m */; };
+		9088825B1672E3D200EFB0AE /* MagicalRecordSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 908882591672E3D200EFB0AE /* MagicalRecordSpec.m */; };
 		90E0EA541672C3FE0039EC80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EA531672C3FE0039EC80 /* Cocoa.framework */; };
 		90E0EA6A1672C3FE0039EC80 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EA691672C3FE0039EC80 /* SenTestingKit.framework */; };
 		90E0EA6B1672C3FE0039EC80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EA531672C3FE0039EC80 /* Cocoa.framework */; };
@@ -95,6 +100,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		908882541672E39700EFB0AE /* MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecord.h; sourceTree = "<group>"; };
+		908882551672E39700EFB0AE /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
+		908882591672E3D200EFB0AE /* MagicalRecordSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecordSpec.m; sourceTree = "<group>"; };
 		90E0EA501672C3FE0039EC80 /* MagicalRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MagicalRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E0EA531672C3FE0039EC80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		90E0EA561672C3FE0039EC80 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -160,10 +168,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9088824B1672E29C00EFB0AE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				908882521672E2C500EFB0AE /* iOS */,
+				908882531672E2CC00EFB0AE /* OS X */,
+				908882591672E3D200EFB0AE /* MagicalRecordSpec.m */,
+			);
+			name = Tests;
+			path = ../Tests;
+			sourceTree = "<group>";
+		};
+		908882521672E2C500EFB0AE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		908882531672E2CC00EFB0AE /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "OS X";
+			sourceTree = "<group>";
+		};
 		90E0EA461672C3FE0039EC80 = {
 			isa = PBXGroup;
 			children = (
 				90E0EAE61672D6DD0039EC80 /* MagicalRecord */,
+				9088824B1672E29C00EFB0AE /* Tests */,
 				90E0EABE1672C6360039EC80 /* MagicalRecord iOS */,
 				90E0EA891672C4640039EC80 /* MagicalRecord OS X */,
 				90E0EAC51672C6D40039EC80 /* Vendor */,
@@ -265,6 +299,8 @@
 		90E0EAE61672D6DD0039EC80 /* MagicalRecord */ = {
 			isa = PBXGroup;
 			children = (
+				908882541672E39700EFB0AE /* MagicalRecord.h */,
+				908882551672E39700EFB0AE /* MagicalRecord.m */,
 			);
 			name = MagicalRecord;
 			path = ../MagicalRecord;
@@ -277,6 +313,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908882561672E39700EFB0AE /* MagicalRecord.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908882581672E39700EFB0AE /* MagicalRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9088825B1672E3D200EFB0AE /* MagicalRecordSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908882571672E39700EFB0AE /* MagicalRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9088825A1672E3D200EFB0AE /* MagicalRecordSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,7 +703,7 @@
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+					"\"$(SRCROOT)/Vendor/Kiwi/Kiwi\"",
 				);
 				INFOPLIST_FILE = "MagicalRecord OS X/Tests/MagicalRecordTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
@@ -680,7 +721,7 @@
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+					"\"$(SRCROOT)/Vendor/Kiwi/Kiwi\"",
 				);
 				INFOPLIST_FILE = "MagicalRecord OS X/Tests/MagicalRecordTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
@@ -731,7 +772,7 @@
 				GCC_PREFIX_HEADER = "MagicalRecord iOS/MagicalRecord-iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+					"\"$(SRCROOT)/Vendor/Kiwi/Kiwi\"",
 				);
 				INFOPLIST_FILE = "MagicalRecord iOS/Tests/MagicalRecord-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -753,7 +794,7 @@
 				GCC_PREFIX_HEADER = "MagicalRecord iOS/MagicalRecord-iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+					"\"$(SRCROOT)/Vendor/Kiwi/Kiwi\"",
 				);
 				INFOPLIST_FILE = "MagicalRecord iOS/Tests/MagicalRecord-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
