@@ -1,5 +1,7 @@
 # ![Awesome](https://github.com/magicalpanda/magicalpanda.github.com/blob/master/images/awesome_logo_small.png?raw=true) MagicalRecord
 
+**Please note:** *This branch contains an in-progress rewrite of MagicalRecord. It is not suitable for use yet.*
+
 In software engineering, the active record pattern is a design pattern found in software that stores its data in relational databases. It was named by Martin Fowler in his book Patterns of Enterprise Application Architecture. The interface to such an object would include functions such as Insert, Update, and Delete, plus properties that correspond more-or-less directly to the columns in the underlying database table.
 
 >	Active record is an approach to accessing data in a database. A database table or view is wrapped into a class; thus an object instance is tied to a single row in the table. After creation of an object, a new row is added to the table upon save. Any object loaded gets its information from the database; when an object is updated, the corresponding row in the table is also updated. The	wrapper class implements accessor methods or properties for each column in the table or view.
@@ -13,33 +15,39 @@ MagicalRecord was inspired by the ease of Ruby on Rails' Active Record fetching.
 * Still allow the modification of the NSFetchRequest when request optimizations are needed
 
 
-# Installation
+## Installation
 
 1. In your XCode Project, drag the *MagicalRecord* folder (under the main folder) into your project. 
 2. Add *CoreData+MagicalRecord.h* file to your PCH file or your AppDelegate file.
 3. Optionally preceed the *CoreData+MagicalRecord.h* import with `#define MR_SHORTHAND` to your PCH file if you want to use MagicalRecord methods without the *MR_prefix* like `findAll` instead of `MR_findAll`
 4. Start writing code!
 
-# Requirements
+## Requirements
+MagicalRecord 3.x requires:
 
-MagicalRecord Platform Requirements:
+* iOS SDK 5.x and higher; or
+* OS X SDK 10.7 and newer;
 
-* iOS5.0 and newer, or Mac OS 10.7 and newer
-* ARC
+## Contributing
+We are working on a brand new release in this branch, and contributions are welcome.
 
-An iOS4 compatible version is available for use. Reference [tag 1.8.3](https://github.com/magicalpanda/MagicalRecord/tree/1.8.3).
+### TODO
+* Instructions on setting up a fork and contributing pull requests (including git-flow);
+* Outline development approach, including TDD;
+* Coding standards, and the expected format;
 
-## Updating to 2.0
+# Notes
 
-MagicalRecord 2.0 is considered a major update since there were some class and API refactorings that will effect previous installations of MagicalRecord in your code. The most straight forward change is that *MagicalRecordHelpers* and *MRCoreDataAction* have both been replaced with a single class, *MagicalRecord*.
+## Updating to 3.x
+
+*To be done*
 
 ## ARC Support
 
 MagicalRecord fully supports ARC out of the box, there is no configuration necessary. 
+
 The last version to support manually managed memory is 1.8.3, and is available from the downloads page, or by switching to the 1.8.3 tag in the source.
 
-
-# Notes
 ## Third Party Blog Entries
 The following blog entries highlight how to install and use aspects of Magical Record.
 
@@ -49,12 +57,11 @@ The following blog entries highlight how to install and use aspects of Magical R
 * [Core Data and Threads, without the Headache](http://www.cimgf.com/2011/05/04/core-data-and-threads-without-the-headache/)
 * [Unit Testing with Core Data](http://www.cimgf.com/2012/05/15/unit-testing-with-core-data/)
 
-## Twitter 
+## Twitter
 Follow [@MagicalRecord](http://twitter.com/magicalrecord) on twitter to stay up to date on twitter with the lastest updates to MagicalRecord and for basic support
 
 
 ## Nested Contexts
-
 New in Core Data is support for related contexts. This is a super neat, and super fast feature. However, writing a wrapper that supports both is, frankly, more work that it's worth. However, the 1.8.3 version will be the last version that has dual support, and going forward, MagicalRecord will only work with the version of Core Data that has supports nested managed object contexts.
 
 MagicalRecord provides a background saving queue so that saving all data is performed off the main thread, in the background. This means that it may be necessary to use *MR_saveNestedContexts* rather than the typical *MR_save* method in order to persist your changes all the way to your persistent store;
@@ -296,6 +303,6 @@ This completion block is called on the main thread (queue), so this is also safe
 
 MagicalRecord will now import data from NSObjects into your Core Data store. [Documentation](https://github.com/magicalpanda/MagicalRecord/wiki/Data-Import) for this feature is forthcoming.
 	
-# Extra Bits
+# License
 This Code is released under the MIT License by [Magical Panda Software, LLC](http://www.magicalpanda.com).  We love working on iOS and Mac apps for you!
 There is no charge for Awesome.
