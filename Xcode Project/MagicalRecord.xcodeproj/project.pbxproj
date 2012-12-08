@@ -163,6 +163,7 @@
 		90E0EA461672C3FE0039EC80 = {
 			isa = PBXGroup;
 			children = (
+				90E0EAE61672D6DD0039EC80 /* MagicalRecord */,
 				90E0EABE1672C6360039EC80 /* MagicalRecord iOS */,
 				90E0EA891672C4640039EC80 /* MagicalRecord OS X */,
 				90E0EAC51672C6D40039EC80 /* Vendor */,
@@ -259,6 +260,14 @@
 				90E0EAD51672C7610039EC80 /* KiwiExamples.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		90E0EAE61672D6DD0039EC80 /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MagicalRecord;
+			path = ../MagicalRecord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
