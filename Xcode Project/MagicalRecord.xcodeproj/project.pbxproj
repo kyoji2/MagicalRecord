@@ -673,6 +673,7 @@
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
 				INFOPLIST_FILE = "MagicalRecord OS X/MagicalRecord-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = MagicalRecord;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -689,6 +690,7 @@
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
 				INFOPLIST_FILE = "MagicalRecord OS X/MagicalRecord-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = MagicalRecord;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -737,7 +739,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord iOS/MagicalRecord-iOS-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = MagicalRecord;
 				PUBLIC_HEADERS_FOLDER_PATH = MagicalRecord;
 				SDKROOT = iphoneos;
@@ -752,7 +757,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord iOS/MagicalRecord-iOS-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = MagicalRecord;
 				PUBLIC_HEADERS_FOLDER_PATH = MagicalRecord;
 				SDKROOT = iphoneos;
