@@ -15,10 +15,12 @@
 		90E0EA931672C46D0039EC80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90E0EA8F1672C4640039EC80 /* InfoPlist.strings */; };
 		90E0EA9A1672C52D0039EC80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EA991672C52D0039EC80 /* Foundation.framework */; };
 		90E0EAA81672C52D0039EC80 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EA691672C3FE0039EC80 /* SenTestingKit.framework */; };
-		90E0EAAA1672C52D0039EC80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EAA91672C52D0039EC80 /* UIKit.framework */; };
 		90E0EAAB1672C52D0039EC80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EA991672C52D0039EC80 /* Foundation.framework */; };
 		90E0EAAE1672C52D0039EC80 /* libMagicalRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EA981672C52D0039EC80 /* libMagicalRecord.a */; };
 		90E0EAC41672C6410039EC80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90E0EAC11672C6360039EC80 /* InfoPlist.strings */; };
+		90E0EADA1672C78D0039EC80 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EACF1672C7610039EC80 /* libKiwi.a */; };
+		90E0EADC1672C79A0039EC80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EADB1672C79A0039EC80 /* UIKit.framework */; };
+		90E0EADF1672C7AF0039EC80 /* libKiwi-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E0EAD11672C7610039EC80 /* libKiwi-OSX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 90E0EA971672C52D0039EC80;
 			remoteInfo = "MagicalRecord-iOS";
+		};
+		90E0EACE1672C7610039EC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015B9F11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		90E0EAD01672C7610039EC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C83C7157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
+		};
+		90E0EAD21672C7610039EC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015C9E11584017002E9A98;
+			remoteInfo = KiwiTests;
+		};
+		90E0EAD41672C7610039EC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3B16542139967B800E9CC6E;
+			remoteInfo = KiwiExamples;
+		};
+		90E0EAD81672C7870039EC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5015B9E11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		90E0EADD1672C7A90039EC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 832C8323157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,10 +110,11 @@
 		90E0EA981672C52D0039EC80 /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E0EA991672C52D0039EC80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90E0EAA71672C52D0039EC80 /* MagicalRecord-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MagicalRecord-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90E0EAA91672C52D0039EC80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		90E0EABF1672C6360039EC80 /* MagicalRecord-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		90E0EAC21672C6360039EC80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		90E0EAC31672C6360039EC80 /* MagicalRecord-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicalRecord-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		90E0EADB1672C79A0039EC80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +130,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E0EA6A1672C3FE0039EC80 /* SenTestingKit.framework in Frameworks */,
 				90E0EA6B1672C3FE0039EC80 /* Cocoa.framework in Frameworks */,
+				90E0EA6A1672C3FE0039EC80 /* SenTestingKit.framework in Frameworks */,
 				90E0EA6E1672C3FE0039EC80 /* MagicalRecord.framework in Frameworks */,
+				90E0EADF1672C7AF0039EC80 /* libKiwi-OSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,10 +149,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E0EAA81672C52D0039EC80 /* SenTestingKit.framework in Frameworks */,
-				90E0EAAA1672C52D0039EC80 /* UIKit.framework in Frameworks */,
+				90E0EADC1672C79A0039EC80 /* UIKit.framework in Frameworks */,
 				90E0EAAB1672C52D0039EC80 /* Foundation.framework in Frameworks */,
+				90E0EAA81672C52D0039EC80 /* SenTestingKit.framework in Frameworks */,
 				90E0EAAE1672C52D0039EC80 /* libMagicalRecord.a in Frameworks */,
+				90E0EADA1672C78D0039EC80 /* libKiwi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +165,7 @@
 			children = (
 				90E0EABE1672C6360039EC80 /* MagicalRecord iOS */,
 				90E0EA891672C4640039EC80 /* MagicalRecord OS X */,
+				90E0EAC51672C6D40039EC80 /* Vendor */,
 				90E0EA521672C3FE0039EC80 /* Frameworks */,
 				90E0EA511672C3FE0039EC80 /* Products */,
 			);
@@ -138,9 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				90E0EA531672C3FE0039EC80 /* Cocoa.framework */,
-				90E0EA691672C3FE0039EC80 /* SenTestingKit.framework */,
 				90E0EA991672C52D0039EC80 /* Foundation.framework */,
-				90E0EAA91672C52D0039EC80 /* UIKit.framework */,
+				90E0EA691672C3FE0039EC80 /* SenTestingKit.framework */,
+				90E0EADB1672C79A0039EC80 /* UIKit.framework */,
 				90E0EA551672C3FE0039EC80 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -194,6 +242,25 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		90E0EAC51672C6D40039EC80 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		90E0EAC71672C7600039EC80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90E0EACF1672C7610039EC80 /* libKiwi.a */,
+				90E0EAD11672C7610039EC80 /* libKiwi-OSX.a */,
+				90E0EAD31672C7610039EC80 /* KiwiTests.octest */,
+				90E0EAD51672C7610039EC80 /* KiwiExamples.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -238,6 +305,7 @@
 			);
 			dependencies = (
 				90E0EA6D1672C3FE0039EC80 /* PBXTargetDependency */,
+				90E0EADE1672C7A90039EC80 /* PBXTargetDependency */,
 			);
 			name = "MagicalRecord-OSXTests";
 			productName = MagicalRecordTests;
@@ -273,6 +341,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				90E0EAD91672C7870039EC80 /* PBXTargetDependency */,
 				90E0EAAD1672C52D0039EC80 /* PBXTargetDependency */,
 			);
 			name = "MagicalRecord-iOSTests";
@@ -299,15 +368,52 @@
 			mainGroup = 90E0EA461672C3FE0039EC80;
 			productRefGroup = 90E0EA511672C3FE0039EC80 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 90E0EAC71672C7600039EC80 /* Products */;
+					ProjectRef = 90E0EAC61672C7600039EC80 /* Kiwi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				90E0EA4F1672C3FE0039EC80 /* MagicalRecord-OSX */,
-				90E0EA671672C3FE0039EC80 /* MagicalRecord-OSXTests */,
 				90E0EA971672C52D0039EC80 /* MagicalRecord-iOS */,
 				90E0EAA61672C52D0039EC80 /* MagicalRecord-iOSTests */,
+				90E0EA4F1672C3FE0039EC80 /* MagicalRecord-OSX */,
+				90E0EA671672C3FE0039EC80 /* MagicalRecord-OSXTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		90E0EACF1672C7610039EC80 /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = 90E0EACE1672C7610039EC80 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E0EAD11672C7610039EC80 /* libKiwi-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-OSX.a";
+			remoteRef = 90E0EAD01672C7610039EC80 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E0EAD31672C7610039EC80 /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = 90E0EAD21672C7610039EC80 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90E0EAD51672C7610039EC80 /* KiwiExamples.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiExamples.octest;
+			remoteRef = 90E0EAD41672C7610039EC80 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		90E0EA4E1672C3FE0039EC80 /* Resources */ = {
@@ -406,6 +512,16 @@
 			isa = PBXTargetDependency;
 			target = 90E0EA971672C52D0039EC80 /* MagicalRecord-iOS */;
 			targetProxy = 90E0EAAC1672C52D0039EC80 /* PBXContainerItemProxy */;
+		};
+		90E0EAD91672C7870039EC80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kiwi;
+			targetProxy = 90E0EAD81672C7870039EC80 /* PBXContainerItemProxy */;
+		};
+		90E0EADE1672C7A90039EC80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kiwi-OSX";
+			targetProxy = 90E0EADD1672C7A90039EC80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -506,6 +622,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
 				INFOPLIST_FILE = "MagicalRecord OS X/MagicalRecord-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = MagicalRecord;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -521,6 +638,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
 				INFOPLIST_FILE = "MagicalRecord OS X/MagicalRecord-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = MagicalRecord;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -533,7 +651,12 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+				);
 				INFOPLIST_FILE = "MagicalRecord OS X/Tests/MagicalRecordTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -546,7 +669,12 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord OS X/MagicalRecord-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+				);
 				INFOPLIST_FILE = "MagicalRecord OS X/Tests/MagicalRecordTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -592,8 +720,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord iOS/MagicalRecord-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+				);
 				INFOPLIST_FILE = "MagicalRecord iOS/Tests/MagicalRecord-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = octest;
@@ -609,8 +742,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MagicalRecord iOS/MagicalRecord-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Xcode Project/Vendor/Kiwi/Kiwi\"",
+				);
 				INFOPLIST_FILE = "MagicalRecord iOS/Tests/MagicalRecord-iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -655,6 +793,7 @@
 				90E0EABA1672C52D0039EC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90E0EABB1672C52D0039EC80 /* Build configuration list for PBXNativeTarget "MagicalRecord-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +802,7 @@
 				90E0EABD1672C52D0039EC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

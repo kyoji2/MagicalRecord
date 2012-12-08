@@ -1,0 +1,3 @@
+[submodule "Xcode Project/Vendor/Kiwi"]
+	path = Xcode Project/Vendor/Kiwi
+	url = git://github.com/allending/Kiwi.git
