@@ -218,7 +218,7 @@ NSString * const kMagicalRecordPSCDidCompleteiCloudSetupNotification = @"kMagica
         [self unlock];
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            if ([NSPersistentStore MR_defaultPersistentStore] == nil)
+            if ([NSPersistentStore MR_defaultPersistentStore] == nil && self.persistentStores.count > 0)
             {
                 [NSPersistentStore MR_setDefaultPersistentStore:[[self persistentStores] objectAtIndex:0]];
             }
