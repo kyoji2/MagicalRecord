@@ -208,6 +208,8 @@ NSString * const kMagicalRecordPSCDidCompleteiCloudSetupNotification = @"kMagica
         }
         else 
         {
+			NSDictionary *noICloudOptions = @{NSReadOnlyPersistentStoreOption : @YES};
+            options = [options MR_dictionaryByMergingDictionary:noICloudOptions];
             MRLog(@"iCloud is not enabled");
         }
         
