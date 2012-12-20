@@ -327,7 +327,7 @@
                                                                delegate:delegate
                                                               inContext:context];
 	
-	[self MR_performFetch:controller];
+//	[self MR_performFetch:controller];
 	return controller;
 }
 
